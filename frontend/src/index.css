@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*,
+::before,
+::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+label{
+  font-size: 20px;
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: #FFF;
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.container > h1{
+  margin-bottom: 20px;
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container div{
+  display: flex;
+  flex-direction: column;
+}
+
+.container input{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.container input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+}
+
+button{
+  background-color: purple;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.yes-btn {
+  background-color: rgb(22, 168, 22);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 35px;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 80%;
+  margin: 40px 0;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: rgb(18, 136, 18);
+  }
+  &:disabled {
+    background-color: rgba(22, 168, 22, 0.5);
+    cursor: not-allowed;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(22, 168, 22, 0.5);
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(22, 168, 22);
+    transform: translateY(-50%);
+    transition: width 0.3s ease;
+    opacity: 0;
+  }
+}
+
+.no-btn {
+    background-color: red;
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;              /* You can remove this if centering */
+    padding: 10px 40px;
+    cursor: pointer;
+    margin: 40px 0;                /* You may want to adjust this */
+    transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 50%;
+    &:hover {
+    background-color: rgb(180, 25, 25);
+  }
+  &:disabled {
+    background-color: rgba(233, 15, 15, 0.794);
+    cursor: not-allowed;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(231, 5, 5, 0.798);
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(168, 22, 22);
+    transform: translateY(-50%);
+    transition: width 0.3s ease;
+    opacity: 0;
+  }
+}
+
+.container-1 {
+  gap: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 40px 30px 20px 35px;
+  position: relative; 
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
